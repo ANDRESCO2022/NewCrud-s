@@ -1,38 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column; 
+  height: 100vh;
+ }
+
+.form_register {
+  background-color: #ffff;
+  border-radius: 0 0 25px 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.form_register input {
+  border-radius: 10px;
+  border: none;
+  background: #f7f4f4;
+  width: 80%;
+  height: 40px;
+  padding: 15px;
+  margin-top: 15px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.form_register_users {
+  margin-left: 25px;
+  padding-left: 10px;
+  margin-top: 15px;
+}
+.form_register_users input{
+  width: 85%;
+}
+
+.form_register button {
+  background: #5fbab0;
+  margin: 10px;
+  width: 40%;
+  height: 40px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.form_register label {
+  padding: 5px;
+  margin: 5px;
+}
+
+#btn-red{
+  color:red;
+}
+button {
+ padding: 8px;
+ border-radius: 50%;
+ width: 45px;
+ height: 45px;
+ border: 0;
+ outline: 0;
+ cursor: pointer;
+ text-align: center;
+ justify-content: center;
+ opacity: 5;
+  background: #f6f5f8;
+  color:#000000
+}
+.list_user{
+  background-image: url(https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60);
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+
+}
+
+.list_user_info {
+  font-family: 'Assistant',
+  sans-serif;
+  display: flex;
+  background: #f6f5f8;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgb(146, 179, 201);
+  padding: 18px;
+  margin:1.5rem;
+  color: rgb(3, 3, 3);
+  font-size: 18px;
+  list-style: none;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 700px) {
+  .App {
+    flex-direction: row-reverse;
   }
-  to {
-    transform: rotate(360deg);
+
+  .form_register {
+    border-radius: 0;
+    height: 100vh;
+    overflow-x: auto;
+    width: 40%;
+    padding: 30px
   }
+
+  .form_register_users {
+    display: flex;
+    margin-left: -10px;
+    padding-left: 10px;
+    margin-top: 15px;
+
+  }
+  .form_register input {
+    width: 80%;
+  }
+
+  .list_user_card {
+    height: 100vh;
+    overflow-x: auto;
+    padding: 30px;
+    width: 700px;
+
+  }
+
+  .list_user {
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+
 }
