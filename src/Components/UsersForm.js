@@ -14,7 +14,7 @@ const UsersForm = ({ getUser, userSelected, setUserSelected }) => {
         password: userSelected.password,
       });
     }
-  }, [userSelected]);
+  }, [reset, userSelected]);
 
   const defaultValues = {
     first_name: "",
